@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+<!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html" id="brand">Amrit's Blog</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler bg-danger text-white rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav nav-tabs ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#masthead">ABOUT ME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#masthead1">CONTACT ME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="post.html">BLOGS</a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="auth.html">Register & signIn</a></li> -->
+                </ul>
+        </div>
+        </div>
+        </nav>
+        <header class="masthead" style="background-image:url('assets/img/home-bg.jpg'); background-size: cover;">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto">
+                        <div class="site-heading">
+                            <h1 id="head1" class="lead">Let's Start</h1><center><span class="subheading" style="font-size: larger; color: beige; text-shadow: 2px 2px black;"><b>A Blogging website by Amrit Sharma</b></span></center></div>
+                    </div>
+                </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row" id="row1">
+                <div class="col-md-12 col-lg-12">
+                    <div class="post-preview">
+                        <a href="#" id="link">
+                            <h2 class="post-title">By Fakeer Ishavardas</h2>
+                            <h3 class="post-subtitle lead">“There is always a choice. Always. So do not say, you had no choice. Good or bad, doing it or not, is about you, not choices, Always”.</h3>
+                        </a>
+                        <p class="post-meta">Posted by&nbsp;<a href="#">Amrit Sharma on may 22, 2020</a></p>
+                    </div>
+                    <hr>
+                    <div class="post-preview">
+                        <a href="#" id="link">
+                            <h2 class="post-title"> By Nurudeen Ushawu</h2>
+                            <h3 class="post-subtitle lead">“We refused to be what world want us to be- BAD. We are what we are- GOOD. And that's the way it is going to be”.</h3>
+                        </a>
+                        <p class="post-meta">Posted by&nbsp;<a href="#">Amrit Sharma on may 22, 2020</a></p>
+                    </div>
+                    <hr>
+                    <div class="post-preview">
+                        <a href="#" id="link">
+                            <h2 class="post-title">By Mahnoor Tahir</h2>
+                            <h3 class="post-subtitle lead">“The most beautiful smile belongs to those who make others smile”.</h3>
+                        </a>
+                        <p class="post-meta">Posted by&nbsp;<a href="#">Amrit Sharma on may 22, 2020</a></p>
+                    </div>
+                    <hr>
+                    <div class="post-preview">
+                        <a href="#" id="link">
+                            <h2 class="post-title">By Hp Debnath</h2>
+                            <h3 class="post-subtitle lead">“An expert does experiment to create new things, but trying to create a new thing can also make you an expert”.</h3>
+                        </a>
+                        <p class="post-meta">Posted by&nbsp;<a href="#">Amrit Sharma on may 22, 2020</a></p>
+                    </div>
+                    <hr>
+                    
+                </div>
+            </div>
+        </div>
+        <header class="masthead" id="masthead" style="background-image:url('assets/img/about-bg.jpg'); background-size: cover;">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 mx-auto">
+                        <div class="site-heading">
+                            <h1 id="head2">About Me</h1><span class="subheading" style="font-size: larger; text-align: center; font-size: 2em; text-shadow: 2px 2px white; color:yellow;"><center>Web Developer <br> I'm a noob.</center></span></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row" id="row3">
+                <div class="col-md-12 col-lg-12 mx-auto">
+                    I'M A STUDENT OF MECHANICAL ENGINEERING AT NITP. I DEVELOP WEBPAGES AS MY FAVORITE TIME PASS.
+                    I DO NOT BELIEVE IN STEALING CREDITS OF OTHER, AND ALWAYS GIVE CREDIT TO THOSE WHO HELPED.
+                    THIS WEBSITE IS GOING TO BE A BLOGGING WEBSITE, WHERE YOU WOULD BE ABLE TO CREATE AND POST,
+                    YOUR OWN BLOG.<hr>
+                    </div>
+                    </div>
+                    </div>
+
+                    <header class="masthead" id="masthead1" style="background-image:url('assets/img/contact-bg.jpg'); background-size: cover;">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 mx-auto">
+                                    <div class="site-heading">
+                                        <h1 id="head3">Contact Me</h1><center><span class="subheading" style="font-size: 30px; color:yellow; text-shadow: 2px 2px red;">I may have answer of your questions.</span></center></div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+					
+					
+                    <div class="container-fluid" id="message1">
+                        <div class="row">
+                            <div class="col-md-10 col-lg-8 mx-auto">
+                                <p style="text-align: center;"><b>Fill out the form below to send me a message, your feedbacks and suggestions are really important to me...<hr></b></p>
+        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+          action="https://script.google.com/macros/s/AKfycbxVTSFSz-DgAYfq13sCL5eVNnvTSFNHTqQmzPsdvA/exec">
+		  
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="What people call you" />
+
+        <br>
+
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+               required placeholder="abc@email.com" />
+			   <br>
+
+        <label for="message">Message: </label>
+        <textarea type="text" id="message" name="message" rows="4"
+                  placeholder="Tell me what's on your mind..."></textarea>
+
+
+        <center><button class="button-success btn-danger pure-button button-xlarge rounded">
+            <i class="fa fa-paper-plane"></i>&nbsp;Send
+        </button></center>
+
+    </form>
+                              
+                            </div>
+                        </div>
+                    </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row" id="row2">
+                    <div class="col-md-12 col-lg-12 mx-auto">
+                        <ul class="list-inline text-center">
+                            <div class="list-inline-item" id="foot"><a href="https://www.facebook.com/profile.php?id=100040989315100" class="fa fa-facebook fa-2x text-danger"></a></div>
+                            <div class="list-inline-item" id="foot"><a href="https://github.com/dev-amrit460" class="fa fa-github fa-2x text-danger"></a></div>
+                            <div class="list-inline-item" id="foot"><a href="https://www.linkedin.com/in/amrit-raj-ba2a15190/" class="fa fa-linkedin fa-2x text-danger"></a></div>
+                            <div class="list-inline-item" id="foot"><a href="https://www.instagram.com/amrit___sharma/" class="fa fa-instagram fa-2x text-danger"></a></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("contextmenu",function(e){
+                e.preventDefault();
+            });
+
+        </script>
+</body>
+</html>
